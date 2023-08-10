@@ -5,19 +5,21 @@ import { motion } from 'framer-motion'
 import { about, services } from '../../constants'
 import { fadeIn, textVariant } from '../../utils/motion'
 import { styles } from '../../styles'
-import { SECTION_SUB_TEXT, SECTION_HEAD_TEXT, SECTION_DESCRIPTION_CLASSES, SECTION_SERVICES_WRAPPER_CLASSES } from './constants'
+import { SECTION_DESCRIPTION_CLASSES, SECTION_SERVICES_WRAPPER_CLASSES } from './constants'
 import ServiceCard from './ServiceCard'
 import { SectionWrapper } from '../../hoc'
+import { useTranslation } from 'react-i18next'
 
 const About = () => {
+  const { t } = useTranslation()
   return (
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>
-          {SECTION_SUB_TEXT}
+          {t('about.sub_text')}
         </p>
         <h2 className={styles.sectionHeadText}>
-          {SECTION_HEAD_TEXT}
+          {t('about.head_text')}
         </h2>
       </motion.div>
 
@@ -25,7 +27,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className={SECTION_DESCRIPTION_CLASSES}
       >
-        {about.description}
+        {t('about.description')}
 
       </motion.p>
 

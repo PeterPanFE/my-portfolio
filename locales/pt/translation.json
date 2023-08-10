@@ -1,0 +1,20 @@
+{
+	"languages": {
+		"en": "Inglês",
+		"pt": "Português"
+	},
+	"navbar": {
+		"about": "Sobre",
+		"work": "Projetos",
+		"contact": "Contacto"
+	},
+	"hero": {
+		"salutations": "Olá, sou o ",
+		"description": "Desenvolvo Apps em React para web e mobile, assim como 3D visuals e user interfaces."
+	},
+	"about": {
+		"sub_text": "Introdução",
+		"head_text": "Resumo",
+		"description": "Sou frontend developer desde 2017. Este portfolio resume o meu conhecimento técnico adquirido ao longo destes anos. Esta app usa entre outras tecnologias e frameworks, React Vite, Typescript, Node.js, and Three.js. Sou um profissional proactivo, que aprende rápido. Procuro sempre a solução que se adequa da melhor forma às necessidades do projecto!"
+	}
+}
