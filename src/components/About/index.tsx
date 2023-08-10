@@ -1,8 +1,7 @@
 import React from 'react'
-import Tilt from 'react-tilt'
 import { motion } from 'framer-motion'
 
-import { about, services } from '../../constants'
+import { services } from '../../constants'
 import { fadeIn, textVariant } from '../../utils/motion'
 import { styles } from '../../styles'
 import { SECTION_DESCRIPTION_CLASSES, SECTION_SERVICES_WRAPPER_CLASSES } from './constants'
