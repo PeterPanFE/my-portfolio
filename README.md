@@ -9,5 +9,6 @@ Currently, two official plugins are available:
 
 # Run Project
 
-npm i
-npm run dev
+npm i.
+
+npm run dev.
