@@ -1,15 +1,8 @@
 #Logs
 npm-debug.log*
 
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
-
 # Dependency directories
 node_modules/
-test-results/
 
 # Optional npm cache directory
 .npm
@@ -17,21 +10,7 @@ test-results/
 # DCE Back Office Stuff
 
 public/**
-dist/**
-dce-backoffice-ui*.zip
-
-.DS_Store
-
-coverage
-
-.idea
 
 package-lock.json
-release-progress-complete.json
 
-release-progress.json
 .npmrc
-.yalc
-yalc.lock
-
-state.json
