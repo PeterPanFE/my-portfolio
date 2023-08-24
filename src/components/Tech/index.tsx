@@ -2,6 +2,7 @@ import { BallCanvas } from '../canvas';
 import { SectionWrapper } from '../../hoc';
 import { technologies } from '../../constants';
 import { SECTION_CONTAINER_CLASSES, SECTION_TECH_ELEMENT_CLASS } from './constants';
+import React from 'react';
 
 const Tech = () => {
   return (
