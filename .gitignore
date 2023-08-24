@@ -10,6 +10,7 @@ node_modules/
 # DCE Back Office Stuff
 
 public/**
+dist/**
 
 package-lock.json
 
