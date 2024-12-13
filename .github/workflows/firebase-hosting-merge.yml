@@ -11,6 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Set up Git
+        run: |
+          git config --global user.email "pedro.afonso.p.oliveira.com"
+          git config --global user.name "PeterPanFE"
       - run: npm ci && npm run build && npm run deploy
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
