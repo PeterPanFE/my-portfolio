@@ -13,11 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Set up Git
-        run: |
-          git config --global user.email "pedro.afonso.p.oliveira@gmail.com"
-          git config --global user.name "PeterPanFE"
-      - run: npm ci && npm run build && npm run deploy
+      - run: npm ci && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
