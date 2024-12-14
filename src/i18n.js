@@ -10,7 +10,6 @@ i18n
 			loadPath: "/locales/{{lng}}/{{ns}}.json",
 		},
 		fallbackLng: "en",
-		lng:"en",
 		debug: true,
 
 		interpolation: {
