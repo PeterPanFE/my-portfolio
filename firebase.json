@@ -14,12 +14,17 @@
     ],
     "headers": [
       {
-        "key": "Cache-Control",
-        "value": "no-cache, no-store, must-revalidate"
-      },
-      {
-        "key": "Content-Type",
-        "value": "application/json"
+        "source": "/locales/**",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache, no-store, must-revalidate"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ]
       }
     ]
   }
