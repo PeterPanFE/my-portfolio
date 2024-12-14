@@ -57,7 +57,6 @@ const Contact = () => {
         <p className={CONTACT_SUBTEXT_CLASSES}>{CONTACT_SUBTEXT}</p>
         <h3 className={CONTACT_HEADTEXT_CLASSES}>{CONTACT_HEADTEXT}</h3>
         <form
-          ref={formRef}
           onSubmit={handleSubmit}
           className={CONTACT_FORM_CLASSES}
         >
