@@ -8,6 +8,10 @@
     ],
     "rewrites": [
       {
+        "source": "/locales/**",
+        "destination": "/locales/{{path}}"
+      },
+      {
         "source": "**",
         "destination": "/index.html"
       }
