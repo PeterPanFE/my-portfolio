@@ -1,0 +1,20 @@
+{
+	"languages": {
+		"en": "English",
+		"pt": "Portuguese"
+	},
+	"navbar": {
+		"about": "About",
+		"work": "Work",
+		"contact": "Contact"
+	},
+	"hero": {
+		"salutations": "Hi, I'm  ",
+		"description": "I develop React Applications for web and mobile, as well as 3D visuals and user interfaces."
+	},
+	"about": {
+		"sub_text": "Introduction",
+		"head_text": "Overview",
+		"description": "I'm a frontend developer since 2017. This protfolio resumes my technical knowledge, adquired throught these years. This app uses frameworks like React Vite, Typescript, Node.js, and Three.js. I'm a quick learner and collaborate closely with clients to create edfficient, scalable, and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life!"
+	}
+}
