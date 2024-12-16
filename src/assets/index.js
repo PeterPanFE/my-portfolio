@@ -1,3 +1,4 @@
+import angularjs from './angularjs.png';
 import logo from "./logo.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
@@ -25,12 +26,19 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import deloitte from "./company/deloitte.png";
+import dengun from "./company/dengun.png";
+import openpublishing from "./company/openpublishing.png";
+import polarising from "./company/polarising.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import petersfrontendworld from './petersfrontendworld.png';
+import countryweatherapp from './countryweatherapp.png';
+
+import linkedin from './linkedin.png';
+import cv from './cv.png';
 
 export {
+  angularjs,
   logo,
   backend,
   creator,
@@ -56,7 +64,12 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
-  jobit,
-  tripguide,
+  petersfrontendworld,
+  countryweatherapp,
+  deloitte,
+  dengun,
+  openpublishing,
+  polarising,
+  linkedin,
+  cv
 };

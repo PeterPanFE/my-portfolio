@@ -1,4 +1,8 @@
 {
+	"sticky": {
+		"download_cv": "Download my CV",
+		"linkedin": "go to my LinkedIn"
+	},
 	"languages": {
 		"en": "Inglês",
 		"pt": "Português"
@@ -9,12 +13,70 @@
 		"contact": "Contacto"
 	},
 	"hero": {
-		"salutations": "Olá, sou o ",
-		"description": "Desenvolvo Apps em React para web e mobile, assim como 3D visuals e user interfaces."
+		"salutations": "Bem-vindo ao Mundo Frontend do Pedro!",
+		"description": "Prepare-se para embarcar no Frontend World — uma galáxia de possibilidades infinitas onde ReactJS, AngularJS e TypeScript colidem. A missão começa agora! (entretanto podes interagir com o robot)"
 	},
 	"about": {
 		"sub_text": "Introdução",
 		"head_text": "Resumo",
-		"description": "Sou frontend developer desde 2017. Este portfolio resume o meu conhecimento técnico adquirido ao longo destes anos. Esta app usa entre outras tecnologias e frameworks, React Vite, Typescript, Node.js, and Three.js. Sou um profissional proactivo, que aprende rápido. Procuro sempre a solução que se adequa da melhor forma às necessidades do projecto!"
+		"description": "Olá, eu sou o Pedro! Com 8 anos de experiência como desenvolvedor frontend, tenho criado aplicações web dinâmicas e intuitivas utilizando as minhas ferramentas favoritas: React e Angular. Este é o meu espaço digital, onde a paixão por um código limpo encontra a criatividade. Fora das linhas de código, sou um viajante ávido, entusiasta de desportos e alguém que encontra inspiração na natureza e nos animais. Quer esteja a criar experiências digitais fluídas ou a explorar novos horizontes, trago energia, curiosidade e um toque de aventura a tudo o que faço. Explore os meus projetos, conheça a minha trajetória e vamos conectar-nos!",
+		"web_developer": "Desenvolvedor Web",
+		"react_developer": "Desenvolvedor ReactJS / ReactNative",
+		"angular_js_developer": "Desenvolvedor AngularJS",
+		"node_js_developer": "Desenvolvedor NodeJs",
+		"deloitte": {
+			"title": "Financial Services IT Analist",
+			"name": "Deloitte",
+			"location": "Lisbon, Portugal (Full-time, Onsite)",
+			"date": "Feb 2016 - Feb 2018",
+			"tasks": [
+				"Analista de negócio principal no setor de serviços financeiros",
+				"Gestão e otimização de processos empresariais utilizando soluções de TI",  
+				"Desenvolvimento de extensões e personalizações no TIA para atender às necessidades dos clientes",  
+				"Desenvolvimento com PL/SQL, Java e XML"
+			]
+		},
+		"dengun": {
+			"title": "Frontend Developer",
+			"name": "Dengun",
+			"location": "Faro, Portugal (Full-time, Onsite)",
+			"date": "Março 2018 - Maio 2020",
+			"tasks": [
+				"Desenvolvimento frontend para várias aplicações web",  
+				"Envolvido em projetos que requerem proficiência em espanhol e inglês",  
+				"Desenvolvimento com Python, Templates Django, ReactJS, JavaScript, jQuery, TypeScript, CSS, SCSS e SASS"
+			]
+		},
+		"openpublishing": {
+			"title": "Frontend Developer",
+			"name": "Open Publishing",
+			"location": "Munique, Alemanha (Full-time, Full Remote)",
+			"date": "Junho 2020 - Maio 2021",
+			"tasks": [
+				"Migração de uma aplicação de gestão de edições de livros para uma arquitetura de micro-frontends em React",  
+				"Desenvolvimento de novas aplicações móveis com React Native", 
+				"Coordenação das tarefas da equipa utilizando metodologias ágeis"
+			]
+		},
+		"polarising": {
+			"title": "Senior Frontend Developer",
+			"name": "Polarising",
+			"location": "Lisboa, Portugal (Full-time, Full Remote)",
+			"date": "Maio 2021 - Atual",
+			"tasks": [
+				"Migração de Angular 10 para Angular 17, e refatoração e otimização de código", 
+				"Desenvolvimento de aplicações React e React Native para seguros de saúde, streaming e aplicações de backoffice",  
+				"Revisão de código e refatoração",  
+				"Testes unitários (Jest) e testes de ponta a ponta (Selenium)",  
+				"Redação de documentação e gestão de tarefas com Jira",  
+				"Design de UI/UX"  
+			]
+		}
+
+	},
+	"works": {
+		"sub_text": "O meu Trabalho",
+		"head_text": "Projetos.",
+		"description": "Tive o privilégio de trabalhar numa variedade de projetos, alguns dos quais são tão secretos que até os droides não sabem nada sobre eles. Infelizmente, devido às rigorosas políticas de privacidade das empresas de tecnologia galácticas para as quais trabalhei, não posso revelar os nomes exatos das aplicações ou das batalhas em que lutei. Mas acredita em mim, contribuí para algumas aplicações fora deste mundo, que vão desde seguros de saúde (ajudando as pessoas a navegar pela galáxia de benefícios), serviços de streaming (para que possa maratonar as suas séries favoritas sem a força do atraso), backoffices (mantendo tudo a funcionar sem problemas nos bastidores), até migrações de node e angular (atualizando apps mais rápido do que um TIE fighter em hiperluz).\n\n Mas quando não estou a trabalhar em projetos secretos, passo o meu tempo livre a desenvolver pequenas aplicações só pela diversão – e para aprender novas habilidades ao longo do caminho. Pensa nelas como a armadura mandaloriana do meu portfólio: prática, elegante e sempre a melhorar.\n\n Desde projetos simples que trazem alegria (porque quem não adora um bom gerador de memes ou uma lista de tarefas com tema espacial?) até explorações mais complexas, estou sempre a experimentar, a aprender e a ultrapassar os limites do que é possível. Cada aplicação é uma oportunidade de aprimorar as mnha skills e divertir-me no processo. Podes pensar nestes projetos como os meus sabres de luz — em constante evolução, sempre a afiar as minhas habilidades para proporcionar experiências de topo.\n\n Portanto, embora não possa mostrar-te o funcionamento interno dos meus projetos galácticos anteriores, convido-te a te juntares a mim nesta aventura através das minhas próprias criações. Desde aplicações simples e divertidas até interfaces frontend sofisticadas, tudo o que aqui encontras foi criado com paixão, experiência e um toque de divertimento. Bem-vindo a bordo!\n\n Que o código esteja contigo!"
 	}
 }

@@ -16,7 +16,7 @@ const Hero = () => {
           <div className={HERO_VERTICAL_LINE_CLASSES} />
         </div>
         <div>
-          <h1 className={HERO_HEAD_TEXT_CLASSES}>{t('hero.salutations')}<span className={HERO_HEAD_SPAN_CLASSES}>{my_global_info.name}</span></h1>
+          <h1 className={HERO_HEAD_TEXT_CLASSES}>{t('hero.salutations')}</h1>
           <p className={HERO_SUB_TEXT_CLASSES}>
             {t('hero.description')}
           </p>

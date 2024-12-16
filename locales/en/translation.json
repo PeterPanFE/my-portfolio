@@ -1,4 +1,8 @@
 {
+	"sticky": {
+		"download_cv": "Download my CV",
+		"linkedin": "go to my LinkedIn"
+	},
 	"languages": {
 		"en": "English",
 		"pt": "Portuguese"
@@ -9,12 +13,49 @@
 		"contact": "Contact"
 	},
 	"hero": {
-		"salutations": "Hi, I'm  ",
-		"description": "I develop React Applications for web and mobile, as well as 3D visuals and user interfaces."
+		"salutations": "Welcome to Peter's Frontend World!",
+		"description": "Prepare yourself to journey through my Frontend World—a galaxy of endless possibilities where React, AngularJS, and TypeScript collide. The mission begins now! (meanwhile you can play with the robot)"
 	},
 	"about": {
 		"sub_text": "Introduction",
 		"head_text": "Overview",
-		"description": "I'm a frontend developer since 2017. This protfolio resumes my technical knowledge, adquired throught these years. This app uses frameworks like React Vite, Typescript, Node.js, and Three.js. I'm a quick learner and collaborate closely with clients to create edfficient, scalable, and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life!"
+		"description": "Hi, I’m Peter! With 8 years of experience as a frontend developer, I’ve built dynamic, user-friendly web applications using my favorite tools: React and Angular. This is my digital space where passion for clean code meets creativity. Beyond the lines of code, I’m an avid traveler, a sports enthusiast, and someone who finds inspiration in nature and animals. Whether I'm crafting seamless user experiences or exploring new horizons, I bring energy, curiosity, and a touch of adventure to everything I do. Dive into my projects, learn about my journey, and let’s connect!",
+		"web_developer": "Web Developer",
+		"react_developer": "ReactJS / ReactNative Developer",
+		"angular_js_developer": "AngularJS Developer",
+		"node_js_developer": "NodeJs Developer",
+		"deloitte": {
+			"title": "Financial Services IT Analist",
+			"name": "Deloitte",
+			"location": "Lisbon, Portugal (Full-time, Onsite)",
+			"date": "Feb 2016 - Feb 2018",
+			"tasks": "Core business analyst within the financial services sector; Management and optimization of business processes using IT solutions; Development of extencions and costumizations in TIA to match client's needs; Development with PL/SQL, Java e XML"
+		},
+		"dengun": {
+			"title": "Frontend Developer",
+			"name": "Dengun",
+			"location": "Faro, Portugal (Full-time, Onsite)",
+			"date": "Mach 2018 - May 2020",
+			"tasks": "Frontend development for various web applications; Involved in projects requiring both Spanish and English proficiency; Development with Python, Django Templates, ReactJS, JAvascript, Jquery, TypeScript, Css, Scss and Sass"
+		},
+		"openpublishing": {
+			"title": "Frontend Developer",
+			"name": "Open Publishing",
+			"location": "Munich, Germany (Full-time, Full Remote)",
+			"date": "June 2020 - May 2021",
+			"tasks": "Migration of a Book Edition Management App to a React Micro-Frontend architecture; Development of new mobile apps with React Native; Coordination of team tasks using agile methodologies"
+		},
+		"polarising": {
+			"title": "Senior Frontend Developer",
+			"name": "Polarising",
+			"location": "Lisbon, Portugal (Full-time, Full Remote)",
+			"date": "May 2021 - Current",
+			"tasks": "Migration from Angular 10 to Angular 17, and code refactoring and optimization; Development of React and React apps for health insurance, streaming, and backoffice applications; Code review and refactoring; Unitary testing (Jest) and end-to-end testing (Selenium); Documentation writing and task management using Jira; UI/UX design"
+		}
+	},
+	"works": {
+		"sub_text": "my work",
+		"head_text": "Projects.",
+		"description": "I’ve had the privilege of working on a variety of projects, some of which are so secret, even the droids don’t know about them. Unfortunately, due to the strict privacy policies of the galactic tech companies I've worked for, I can't reveal the exact names of the apps or the battles I've fought in. But trust me, I’ve contributed to some out-of-this-world applications, ranging from health insurance (helping people navigate the galaxy of benefits), streaming services (so you can binge-watch your favorite shows without the force of lag), backoffices (keeping things running smoothly behind the scenes), and even node and angular migrations (moving data faster than a TIE fighter on hyperdrive).\n\nBut when I'm not working on secret projects, I spend my free time developing fun little applications just for the fun of it – and to learn new skills along the way. Think of them like the Mandalorian armor of my portfolio: practical, stylish, and always improving.\n\nFrom simple projects that bring joy (because who doesn’t love a good meme generator or a space-themed to-do list?) to more complex explorations, I’m always experimenting, learning, and pushing the boundaries of what’s possible. Each app is a chance to hone my craft and have a little fun in the process. You can think of these as my lightsabers — ever-evolving, always sharpening my skills to deliver top-tier experiences.\n\nSo while I can’t show you the inner workings of my previous galactic projects, I invite you to join me on this adventure through my own creations. From simple fun apps to sophisticated frontend interfaces, everything here is crafted with passion, expertise, and a pinch of Star Wars magic. Welcome aboard!\n\nMay the code be with you!"
 	}
 }

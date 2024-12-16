@@ -1,28 +1,19 @@
 import {
-	mobile,
-	backend,
-	creator,
+	angularjs,
 	web,
 	javascript,
 	typescript,
-	html,
-	css,
 	reactjs,
 	redux,
 	tailwind,
 	nodejs,
-	mongodb,
-	git,
-	figma,
 	docker,
-	meta,
-	starbucks,
-	tesla,
-	shopify,
-	carrent,
-	jobit,
-	tripguide,
-	threejs,
+	petersfrontendworld,
+	countryweatherapp,
+	deloitte,
+	dengun,
+	openpublishing,
+	polarising
 } from "../assets";
 
 export const navLinks = [
@@ -38,42 +29,29 @@ export const navLinks = [
 ];
 
 const works = {
-	description:
-		"Following projects showcases my skills and experience\
-  through real-world examples of my work. Each project is briefly described\
-  with links to code repositories and live demos in it. It reflects my ability\
-  to solve complex problems, work with diferent technologies, and manage\
-  projects effectively.",
-};
-
+	description: "description"
+  };
+  
 const services = [
 	{
-		title: "Web Developer",
+		title: 'web_developer',
 		icon: web,
 	},
 	{
-		title: "React Native Developer",
-		icon: mobile,
+		title: 'react_developer',
+		icon: reactjs,
 	},
 	{
-		title: "Backend Developer",
-		icon: backend,
+		title: 'angular_js_developer',
+		icon: angularjs,
 	},
 	{
-		title: "Content Creator",
-		icon: creator,
+		title: 'node_js_developer',
+		icon: nodejs,
 	},
 ];
 
 const technologies = [
-	{
-		name: "HTML 5",
-		icon: html,
-	},
-	{
-		name: "CSS 3",
-		icon: css,
-	},
 	{
 		name: "JavaScript",
 		icon: javascript,
@@ -85,6 +63,10 @@ const technologies = [
 	{
 		name: "React JS",
 		icon: reactjs,
+	},
+	{
+		name: "Angular JS",
+		icon: angularjs,
 	},
 	{
 		name: "Redux Toolkit",
@@ -99,22 +81,6 @@ const technologies = [
 		icon: nodejs,
 	},
 	{
-		name: "MongoDB",
-		icon: mongodb,
-	},
-	{
-		name: "Three JS",
-		icon: threejs,
-	},
-	{
-		name: "git",
-		icon: git,
-	},
-	{
-		name: "figma",
-		icon: figma,
-	},
-	{
 		name: "docker",
 		icon: docker,
 	},
@@ -122,56 +88,40 @@ const technologies = [
 
 const experiences = [
 	{
-		title: "React.js Developer",
-		company_name: "Starbucks",
-		icon: starbucks,
-		iconBg: "#383E56",
-		date: "March 2020 - April 2021",
-		points: [
-			"Developing and maintaining web applications using React.js and other related technologies.",
-			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-			"Implementing responsive design and ensuring cross-browser compatibility.",
-			"Participating in code reviews and providing constructive feedback to other developers.",
-		],
+		title: "polarising.title",
+		location: "polarising.location",
+		company_name: "polarising.name",
+		icon: polarising,
+		iconBg: "#000000",
+		date: "polarising.date",
+		tasks: "polarising.tasks",
 	},
 	{
-		title: "React Native Developer",
-		company_name: "Tesla",
-		icon: tesla,
-		iconBg: "#E6DEDD",
-		date: "Jan 2021 - Feb 2022",
-		points: [
-			"Developing and maintaining web applications using React.js and other related technologies.",
-			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-			"Implementing responsive design and ensuring cross-browser compatibility.",
-			"Participating in code reviews and providing constructive feedback to other developers.",
-		],
+		title: "openpublishing.title",
+		location: "openpublishing.location",
+		company_name: "openpublishing.name",
+		icon: openpublishing,
+		iconBg: "#000000",
+		date: "openpublishing.date",
+		tasks: "openpublishing.tasks",
 	},
 	{
-		title: "Web Developer",
-		company_name: "Shopify",
-		icon: shopify,
-		iconBg: "#383E56",
-		date: "Jan 2022 - Jan 2023",
-		points: [
-			"Developing and maintaining web applications using React.js and other related technologies.",
-			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-			"Implementing responsive design and ensuring cross-browser compatibility.",
-			"Participating in code reviews and providing constructive feedback to other developers.",
-		],
+		title: "dengun.title",
+		location: "dengun.location",
+		company_name: "dengun.name",
+		icon: dengun,
+		iconBg: "#000000",
+		date: "dengun.date",
+		tasks: "dengun.tasks",
 	},
 	{
-		title: "Full stack Developer",
-		company_name: "Meta",
-		icon: meta,
-		iconBg: "#E6DEDD",
-		date: "Jan 2023 - Present",
-		points: [
-			"Developing and maintaining web applications using React.js and other related technologies.",
-			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-			"Implementing responsive design and ensuring cross-browser compatibility.",
-			"Participating in code reviews and providing constructive feedback to other developers.",
-		],
+		title: "deloitte.title",
+		location: "deloitte.location",
+		company_name: "deloitte.name",
+		icon: deloitte,
+		iconBg: "#000000",
+		date: "deloitte.date",
+		tasks: "deloitte.tasks",
 	},
 ];
 
@@ -204,16 +154,16 @@ const testimonials = [
 
 const projects = [
 	{
-		name: "Car Rent",
+		name: "Peters Frontend World",
 		description:
-			"Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+			"Peter's Frontend World is my personal portfolio, built to showcase my journey as a frontend developer. Designed with React and ThreeJS and styled for an intuitive experience, it’s a hub for exploring my skills, projects, and passion for web development.",
 		tags: [
 			{
 				name: "react",
 				color: "blue-text-gradient",
 			},
 			{
-				name: "mongodb",
+				name: "three",
 				color: "green-text-gradient",
 			},
 			{
@@ -221,56 +171,43 @@ const projects = [
 				color: "pink-text-gradient",
 			},
 		],
-		image: carrent,
-		source_code_link: "https://github.com/",
+		image: petersfrontendworld,
+		source_code_link: "https://github.com/PeterPanFE/my-portfolio",
 	},
 	{
-		name: "Job IT",
+		name: "Country Web App",
 		description:
-			"Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+			"A weather and country explorer app where you can search and filter countries, view details like capital, currency, and language, and check the latest weather forecast for your selected destination.",
 		tags: [
 			{
 				name: "react",
 				color: "blue-text-gradient",
 			},
 			{
-				name: "restapi",
+				name: "axios",
 				color: "green-text-gradient",
 			},
 			{
-				name: "scss",
+				name: "graphql",
 				color: "pink-text-gradient",
 			},
-		],
-		image: jobit,
-		source_code_link: "https://github.com/",
-	},
-	{
-		name: "Trip Guide",
-		description:
-			"A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-		tags: [
 			{
-				name: "nextjs",
-				color: "blue-text-gradient",
+				name: "apolloclient",
+				color: "orange-text-gradient",
 			},
 			{
-				name: "supabase",
-				color: "green-text-gradient",
-			},
-			{
-				name: "css",
-				color: "pink-text-gradient",
+				name: "express",
+				color: "cyan-text-gradient",
 			},
 		],
-		image: tripguide,
-		source_code_link: "https://github.com/",
+		image: countryweatherapp,
+		source_code_link: "https://github.com/PeterPanFE/country-weather-app",
 	},
 ];
 
 const my_global_info = {
 	name: "Pedro",
-	job: "Frontend Developer",
+	job: "Senior Frontend Developer",
 	email: "pedro.afonso.p.oliveira@gmail.com",
 };
 

@@ -1,26 +1,27 @@
-import { Tilt } from "react-tilt"
 import { motion } from "framer-motion"
 
 import { styles } from '../../styles'
-import { github } from '../../assets'
 import { SectionWrapper } from '../../hoc'
 import { projects, works } from '../../constants'
 import { fadeIn, textVariant } from "../../utils/motion"
-import { SECTION_SUB_TEXT, SECTION_HEAD_TEXT, WORKS_CONTENT_WRAPPER_CLASSES, WORKS_CONTENT_MOTION_CLASSES, WORKS_PROJECT_CARDS_WRAPPER_CLASSES } from "./constants"
+import { WORKS_CONTENT_WRAPPER_CLASSES, WORKS_CONTENT_MOTION_CLASSES, WORKS_PROJECT_CARDS_WRAPPER_CLASSES } from "./constants"
 
 import ProjectCard from "./ProjectCard"
+import React from "react"
+import { useTranslation } from "react-i18next"
 
 const Works = () => {
+  const {t} = useTranslation();
   return (
     <>
       <motion.div
         variants={textVariant()}
       >
         <p className={styles.sectionSubText}>
-          {SECTION_SUB_TEXT}
+          {t("works.sub_text")}
         </p>
         <h2 className={styles.sectionHeadText}>
-          {SECTION_HEAD_TEXT}
+        {t("works.head_text")}
         </h2>
       </motion.div>
       <div className={WORKS_CONTENT_WRAPPER_CLASSES}>
@@ -28,7 +29,9 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className={WORKS_CONTENT_MOTION_CLASSES}
         >
-          {works.description}
+          {t(`works.${works.description}`).split('\n\n').map((line, index) => (
+            <><p key={index}>{line}</p><br /></>
+          ))}
         </motion.p>
       </div>
       <div className={WORKS_PROJECT_CARDS_WRAPPER_CLASSES}>

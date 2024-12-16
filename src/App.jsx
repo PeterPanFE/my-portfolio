@@ -1,5 +1,6 @@
 import { BrowserRouter } from 'react-router-dom';
 import { Navbar, Hero, About, Experience, Tech, Works, Feedbacks, Contact, StarsCanvas } from './components'
+import StickyButtons from './components/StickyButtons';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Contact />
           <StarsCanvas />
         </div>
+        <StickyButtons />
       </div>
     </BrowserRouter>
   )

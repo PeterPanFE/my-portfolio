@@ -2,6 +2,8 @@ import { motion } from "framer-motion"
 import { Tilt } from "react-tilt"
 import { fadeIn } from "../../utils/motion"
 import { SERVICE_CARD_CLASSES, SERVICE_CARD_ICON_CLASSES, SERVICE_CARD_MOTION_CLASSES, SERVICE_CARD_TITLE_CLASSES, SERVICE_CARD_WRAPPER_CLASSES } from "./constants"
+import React from "react"
+import { useTranslation } from "react-i18next"
 
 interface ServiceCardProps {
   index: number,
@@ -10,6 +12,7 @@ interface ServiceCardProps {
 }
 
 const ServiceCard = ({ index, title, icon }: ServiceCardProps) => {
+  const { t } = useTranslation();
   return (
     <Tilt className={SERVICE_CARD_WRAPPER_CLASSES}>
       <motion.div
@@ -24,7 +27,7 @@ const ServiceCard = ({ index, title, icon }: ServiceCardProps) => {
           }}
           className={SERVICE_CARD_CLASSES}>
           <img src={icon} alt={title} className={SERVICE_CARD_ICON_CLASSES} />
-          <h3 className={SERVICE_CARD_TITLE_CLASSES}>{title}</h3>
+          <h3 className={SERVICE_CARD_TITLE_CLASSES}>{t(`about.${title}`)}</h3>
         </div>
       </motion.div>
     </Tilt>
