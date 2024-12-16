@@ -3,7 +3,7 @@ import { styles } from "../../styles";
 import { ContactFormData } from "./types";
 
 export const EMAILJS_KEYS = {
-  serviceId: 'service_4j7sxz7',
+  serviceId: 'service_p86c3m6',
   templateId: 'template_8stz6ki',
   publicKey: 'aV4XQPOTeSP8fPs-Y'
 }
