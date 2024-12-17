@@ -1,25 +1,27 @@
-import { Suspense, useEffect, useState, useRef } from "react";
-import { Canvas, useLoader, useFrame } from '@react-three/fiber';
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import { Suspense, useEffect, useState, useRef } from "react"
+import { Canvas, useLoader, useFrame } from '@react-three/fiber'
+import { OrbitControls, Preload, useGLTF } from "@react-three/drei"
 import * as THREE from 'three';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 
-import CanvasLoader from '../Loader';
+import CanvasLoader from '../Loader'
 
 const Computers = ({ isMobile }) => {
-  const veteran = useGLTF('./ncr_veteran_ranger_bobblehead/scene.gltf');
-  const group = useRef();
-  const url = './robot_playground/scene.gltf';
-  const robot = useGLTF(url);
-  const { nodes, scene, materials, animations } = useLoader(GLTFLoader, url);
-  const actions = useRef();
-  const [mixer] = useState(() => new THREE.AnimationMixer());
-  useFrame((state, delta) => mixer.update(delta));
+  const veteran = useGLTF('./ncr_veteran_ranger_bobblehead/scene.gltf')
+
+  const group = useRef()
+  const url = './robot_playground/scene.gltf'
+  const robot = useGLTF(url)
+  const { nodes, scene, materials, animations } = useLoader(GLTFLoader, url)
+  const actions = useRef()
+  const [mixer] = useState(() => new THREE.AnimationMixer())
+  useFrame((state, delta) => mixer.update(delta))
   useEffect(() => {
-    actions.current = { idle: mixer.clipAction(animations[0], group.current) };
-    actions.current.idle.play();
-    return () => animations.forEach((clip) => mixer.uncacheClip(clip));
-  }, []);
+    actions.current = { idle: mixer.clipAction(animations[0], group.current) }
+    actions.current.idle.play()
+    return () => animations.forEach((clip) => mixer.uncacheClip(clip))
+  }, [])
+
 
   return (
     <mesh>
@@ -44,45 +46,33 @@ const Computers = ({ isMobile }) => {
         />
       </group>
     </mesh>
-  );
-};
+  )
+}
 
 const ComputersCanvas = () => {
-  const [isMobile, setIsMobile] = useState(false);
-  const canvasRef = useRef();
+  const [isMobile, setIsMobile] = useState(false)
+
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia('(max-width: 768px)');
-    setIsMobile(mediaQuery.matches);
+    const mediaQuery = window.matchMedia('(max-width: 80vw)')
+    setIsMobile(mediaQuery.matches)
     const handleQueryChange = (event) => {
-      setIsMobile(event.matches);
-    };
+      setIsMobile(event.matches)
+    }
+
     mediaQuery.addEventListener('change', handleQueryChange);
 
-    // Handle resize for canvas responsiveness
-    const handleResize = () => {
-      if (canvasRef.current) {
-        const { innerWidth, innerHeight } = window;
-        canvasRef.current.width = innerWidth;
-        canvasRef.current.height = innerHeight;
-      }
-    };
-    window.addEventListener('resize', handleResize);
-    handleResize(); // Set initial size
-
     return () => {
-      mediaQuery.removeEventListener('change', handleQueryChange);
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
+      mediaQuery.removeEventListener('change', handleQueryChange)
+    }
+  }, [])
 
   return (
     <Canvas
-      ref={canvasRef}
-      style={{ height: '50vh', width: '100vw' }} // Make canvas fill screen
+      style={{ height: '50vh', maxWidth:'100vw' }}
       shadows
-      camera={{ position: [10, 3, 5], fov: isMobile ? 35 : 25 }} // Adjust camera for mobile
-      gl={{ preserveDrawingBuffer: true, antialias: true, dpr: window.devicePixelRatio }} // Handle device pixel ratio
+      camera={{ position: [10, 3, 5], fov: 25 }}
+      gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
@@ -95,7 +85,7 @@ const ComputersCanvas = () => {
 
       <Preload all />
     </Canvas>
-  );
-};
+  )
+}
 
-export default ComputersCanvas;
+export default ComputersCanvas

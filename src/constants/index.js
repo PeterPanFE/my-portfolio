@@ -30,8 +30,8 @@ export const navLinks = [
 
 const works = {
 	description: "description"
-  };
-  
+};
+
 const services = [
 	{
 		title: 'web_developer',
@@ -53,11 +53,11 @@ const services = [
 
 const technologies = [
 	{
-		name: "JavaScript",
+		name: "Javascript",
 		icon: javascript,
 	},
 	{
-		name: "TypeScript",
+		name: "Typescript",
 		icon: typescript,
 	},
 	{
