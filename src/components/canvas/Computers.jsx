@@ -40,8 +40,8 @@ const Computers = ({ isMobile }) => {
           ref={group}
           name="robot"
           object={robot.scene}
-          scale={isMobile ? 0.45 : 0.75}
-          position={isMobile ? [0, -1.1, 0.1] : [0, -1.4, 1]}
+          scale={isMobile ? 0.6 : 1.3}
+          position={isMobile ? [0, -0.5, 0] : [0, -1, -2.5]}
           rotation={[-0.01, -0.2, -0.1]}
         />
       </group>
@@ -54,7 +54,7 @@ const ComputersCanvas = () => {
 
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia('(max-width: 500px)')
+    const mediaQuery = window.matchMedia('(max-width: 80vw)')
     setIsMobile(mediaQuery.matches)
     const handleQueryChange = (event) => {
       setIsMobile(event.matches)
@@ -70,6 +70,7 @@ const ComputersCanvas = () => {
   return (
     <Canvas
       // frameloop="demand"
+      style={{ height: '50vh', maxWidth:'100vw' }}
       shadows
       camera={{ position: [10, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
