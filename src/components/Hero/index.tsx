@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import { my_global_info } from '../../constants'
 import { ComputersCanvas } from '../canvas'
 import { HERO_CONTENT_CLASSES, HERO_DASH_CLASSES, HERO_HEAD_SPAN_CLASSES, HERO_HEAD_TEXT_CLASSES, HERO_LEFT_CONTENT_CLASSES, HERO_SCROLLDOWN_ANIMATION, HERO_SCROLLDOWN_CONTAINER, HERO_SCROLLDOWN_WRAPPER, HERO_SECTION_CLASSES, HERO_SUB_TEXT_CLASSES, HERO_VERTICAL_LINE_CLASSES } from './constants'
 import React from 'react'

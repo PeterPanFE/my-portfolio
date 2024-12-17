@@ -7,8 +7,6 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import CanvasLoader from '../Loader'
 
 const Computers = ({ isMobile }) => {
-  const veteran = useGLTF('./ncr_veteran_ranger_bobblehead/scene.gltf')
-
   const group = useRef()
   const url = './robot_playground/scene.gltf'
   const robot = useGLTF(url)
