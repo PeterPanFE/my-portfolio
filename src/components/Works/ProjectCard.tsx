@@ -3,6 +3,7 @@ import { Tilt } from "react-tilt"
 import { github } from "../../assets"
 import { fadeIn } from "../../utils/motion"
 import { WORKS_PROJECT_CARD_TILT_CLASSES, WORKS_PROJECT_CARD_CLASSES, WORKS_PROJECT_CARD_IMAGE_CLASSES, WORKS_PROJECT_CARD_BUTTON_WRAPPER_CLASSES, WORKS_PROJECT_CARD_BUTTON_CLASSES, WORKS_PROJECT_CARD_BUTTON_IMAGE_CLASSES, WORKS_PROJECT_DATA_WRAPPER_CLASSES, WORKS_PROJECT_DATA_TITLE_CLASSES, WORKS_PROJECT_DATA_DESCRIPTION_CLASSES, WORKS_PROJECT_TAGS_WRAPPER_CLASSES } from "./constants"
+import React from "react"
 
 const SourceCodeButton = ({ sourceCodeLink }) => (
   <div className={WORKS_PROJECT_CARD_BUTTON_WRAPPER_CLASSES}>
@@ -36,8 +37,33 @@ const ProjectTags = ({ tags }) => (
   </div>
 )
 
-const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
-  return (
+const ProjectCard = ({ isMobile = false, index, name, description, tags, image, source_code_link }) => {
+  return isMobile ? (
+    <div>
+      <Tilt
+        options={{
+          max: 45,
+          scale: 1,
+          speed: 450
+        }}
+        className={WORKS_PROJECT_CARD_TILT_CLASSES}
+      >
+        <div
+          className={WORKS_PROJECT_CARD_CLASSES}
+        >
+          <img
+            src={image}
+            alt={name}
+            className={WORKS_PROJECT_CARD_IMAGE_CLASSES}
+          />
+
+          <SourceCodeButton sourceCodeLink={source_code_link} />
+        </div>
+        <ProjectData name={name} description={description} />
+        <ProjectTags tags={tags} />
+      </Tilt>
+    </div>
+  ) : (
     <motion.div
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}
     >
@@ -64,6 +90,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
         <ProjectTags tags={tags} />
       </Tilt>
     </motion.div>
+
   )
 }
 
