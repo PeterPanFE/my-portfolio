@@ -15,7 +15,7 @@ function App() {
         <Tech />
         <Works />
         <Feedbacks />
-        <div className="relative z-0 sm:mb-[100px] md:mb-0 ">
+        <div className="relative z-0 md:mb-0 sm:mb-[100px]">
           <Contact />
           <StarsCanvas />
         </div>
