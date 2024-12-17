@@ -30,7 +30,7 @@ const Works = () => {
           className={WORKS_CONTENT_MOTION_CLASSES}
         >
           {t(`works.${works.description}`).split('\n\n').map((line, index) => (
-            <><p key={index}>{line}</p><br /></>
+            <span key={index}>{line}<br /></span>
           ))}
         </motion.p>
       </div>
