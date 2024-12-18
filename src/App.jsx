@@ -1,8 +1,10 @@
 import { BrowserRouter } from 'react-router-dom';
 import { Navbar, Hero, About, Experience, Tech, Works, Feedbacks, Contact, StarsCanvas } from './components'
 import StickyButtons from './components/StickyButtons';
+import app from './firebase';
 
 function App() {
+  console.log("Firebase app initialized:", app);
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
