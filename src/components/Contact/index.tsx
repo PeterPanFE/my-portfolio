@@ -56,7 +56,7 @@ const Contact = () => {
     )
       .then(() => {
         setLoading(false)
-        alert(t('constact.succes_message'))
+        alert(t('contact.succes_message'))
         setForm(CONTACT_FORM_DEFAULT_VALUES)
       }, (error) => {
         setLoading(false)
