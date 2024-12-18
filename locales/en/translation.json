@@ -57,5 +57,24 @@
 		"sub_text": "my work",
 		"head_text": "Projects.",
 		"description": "I’ve had the privilege of working on a variety of projects, some of which are so secret, even the droids don’t know about them. Unfortunately, due to the strict privacy policies of the galactic tech companies I've worked for, I can't reveal the exact names of the apps or the battles I've fought in. But trust me, I’ve contributed to some out-of-this-world applications, ranging from health insurance (helping people navigate the galaxy of benefits), streaming services (so you can binge-watch your favorite shows without the force of lag), backoffices (keeping things running smoothly behind the scenes), and even node and angular migrations (moving data faster than a TIE fighter on hyperdrive).\n\nBut when I'm not working on secret projects, I spend my free time developing fun little applications just for the fun of it – and to learn new skills along the way. Think of them like the Mandalorian armor of my portfolio: practical, stylish, and always improving.\n\nFrom simple projects that bring joy (because who doesn’t love a good meme generator or a space-themed to-do list?) to more complex explorations, I’m always experimenting, learning, and pushing the boundaries of what’s possible. Each app is a chance to hone my craft and have a little fun in the process. You can think of these as my lightsabers — ever-evolving, always sharpening my skills to deliver top-tier experiences.\n\nSo while I can’t show you the inner workings of my previous galactic projects, I invite you to join me on this adventure through my own creations. From simple fun apps to sophisticated frontend interfaces, everything here is crafted with passion, expertise, and a pinch of Star Wars magic. Welcome aboard!\n\nMay the code be with you!"
+	},
+	"testimonials": {
+		"sub_text": "what others say",
+		"head_text": "testimonials"
+	},
+	"contact": {
+		"sub_text": "get in touch",
+		"head_text": "Contact",
+		"name_label": "Your Name",
+		"name_placeholder": "What's your name?",
+		"email_label": "Your Email",
+		"email_placeholder": "What's your  email?",
+		"message_label": "Message",
+		"message_placeholder": "What do you want to say?",
+		"send": "Send",
+		"sending": "Sending...",
+		"succes_message": "Thank you. I will get back to you as soon as possible.",
+		"fail_message": "Failed to send the email.",
+		"alternative_message": "Please send an email directly to "
 	}
 }

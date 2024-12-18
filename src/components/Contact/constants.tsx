@@ -16,26 +16,18 @@ export const CONTACT_FORM_DEFAULT_VALUES: ContactFormData = {
 
 export const CONTACT_FORM_LABELS = {
   name: {
-    label: 'Your Name',
-    placeholder: "What's your name?",
+    label: 'name_label',
+    placeholder: "name_placeholder",
   },
   email: {
-    label: 'Your Email',
-    placeholder: "What's your email?",
+    label: 'email_label',
+    placeholder: "email_placeholder",
   },
   message: {
-    label: 'Your Message',
-    placeholder: "What do you want to say?",
+    label: 'message_label',
+    placeholder: "message_placeholder",
   }
 }
-
-export const CONTACT_SUBTEXT = 'Get in touch'
-export const CONTACT_HEADTEXT = 'Contact.'
-export const LOADING_BUTTON_LABEL = 'Sending...'
-export const SEND_BUTTON_LABEL = 'Send'
-export const SEND_EMAIL_SUCCESS_MESSAGE = 'Thank you. I will get back to you as soon as possible.'
-export const SEND_EMAIL_FAIL_MESSAGE = 'Failed to send the email.'
-export const ALTERNATIVE_SEND_EMAIL_MESSAGE = `Please send me and email directly to ${my_global_info.email}`
 
 export const CONTACT_CONTAINER_CLASSES = 'xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'
 export const CONTACT_CONTAINER_MOTION_CLASSES = 'flex-[0.75] bg-black-100 p-8 rounded-2xl'
