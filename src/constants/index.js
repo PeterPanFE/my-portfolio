@@ -156,7 +156,7 @@ const projects = [
 	{
 		name: "Peters Frontend World",
 		description:
-			"Peter's Frontend World is my personal portfolio, built to showcase my journey as a frontend developer. Designed with React and ThreeJS and styled for an intuitive experience, it’s a hub for exploring my skills, projects, and passion for web development.",
+			"project_1_description",
 		tags: [
 			{
 				name: "react",
@@ -177,7 +177,7 @@ const projects = [
 	{
 		name: "Country Web App",
 		description:
-			"A weather and country explorer app where you can search and filter countries, view details like capital, currency, and language, and check the latest weather forecast for your selected destination.",
+			"project_2_description",
 		tags: [
 			{
 				name: "react",

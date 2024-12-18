@@ -4,6 +4,7 @@ import { github } from "../../assets"
 import { fadeIn } from "../../utils/motion"
 import { WORKS_PROJECT_CARD_TILT_CLASSES, WORKS_PROJECT_CARD_CLASSES, WORKS_PROJECT_CARD_IMAGE_CLASSES, WORKS_PROJECT_CARD_BUTTON_WRAPPER_CLASSES, WORKS_PROJECT_CARD_BUTTON_CLASSES, WORKS_PROJECT_CARD_BUTTON_IMAGE_CLASSES, WORKS_PROJECT_DATA_WRAPPER_CLASSES, WORKS_PROJECT_DATA_TITLE_CLASSES, WORKS_PROJECT_DATA_DESCRIPTION_CLASSES, WORKS_PROJECT_TAGS_WRAPPER_CLASSES } from "./constants"
 import React from "react"
+import { useTranslation } from "react-i18next"
 
 const SourceCodeButton = ({ sourceCodeLink }) => (
   <div className={WORKS_PROJECT_CARD_BUTTON_WRAPPER_CLASSES}>
@@ -20,12 +21,14 @@ const SourceCodeButton = ({ sourceCodeLink }) => (
   </div>
 )
 
-const ProjectData = ({ name, description }) => (
+const ProjectData = ({ name, description }) => {
+  const {t} = useTranslation()
+  return (
   <div className={WORKS_PROJECT_DATA_WRAPPER_CLASSES}>
     <h3 className={WORKS_PROJECT_DATA_TITLE_CLASSES}>{name}</h3>
-    <p className={WORKS_PROJECT_DATA_DESCRIPTION_CLASSES}>{description}</p>
+    <p className={WORKS_PROJECT_DATA_DESCRIPTION_CLASSES}>{t(`works.${description}`)}</p>
   </div>
-)
+)}
 
 const ProjectTags = ({ tags }) => (
   <div className={WORKS_PROJECT_TAGS_WRAPPER_CLASSES}>
