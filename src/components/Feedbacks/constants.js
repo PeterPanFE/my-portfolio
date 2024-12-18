@@ -1,8 +1,5 @@
 import { styles } from '../../styles'
 
-export const SECTION_SUB_TEXT = 'What others say'
-export const SECTION_HEAD_TEXT = 'Testimonials.'
-
 export const FEEDBACKS_WRAPPER_CLASSES = 'mt-12 bg-black-100 rounded-[20px]'
 export const FEEDBACKS_CLASSES = `${styles.padding} bg-tertiary rounded-2xl min-h-[300px]`
 export const FEDDBACK_CARDS_WRAPPER_CLASSES = `${styles.paddingX} -mt-20 pb-14 flex flex-wrap gap-7`

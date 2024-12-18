@@ -2,13 +2,15 @@ import { motion } from 'framer-motion'
 
 import { styles } from '../../styles'
 import { SectionWrapper } from '../../hoc'
-import { fadeIn, textVariant } from '../../utils/motion'
+import { textVariant } from '../../utils/motion'
 import { testimonials } from '../../constants'
-import { FEDDBACK_CARDS_WRAPPER_CLASSES, FEEDBACKS_CLASSES, FEEDBACKS_WRAPPER_CLASSES, SECTION_HEAD_TEXT, SECTION_SUB_TEXT } from './constants'
+import { FEDDBACK_CARDS_WRAPPER_CLASSES, FEEDBACKS_CLASSES, FEEDBACKS_WRAPPER_CLASSES } from './constants'
 import React from 'react'
 import FeedbackCard from './FeedbackCard'
+import { useTranslation } from 'react-i18next'
 
 const Feedbacks = () => {
+  const {t} = useTranslation()
   return (
     <div
       className={FEEDBACKS_WRAPPER_CLASSES}
@@ -20,10 +22,10 @@ const Feedbacks = () => {
           variants={textVariant()}
         >
           <p className={styles.sectionSubText}>
-            {SECTION_SUB_TEXT}
+            {t('testimonials.sub_text')}
           </p>
           <h2 className={styles.sectionHeadText}>
-            {SECTION_HEAD_TEXT}
+          {t('testimonials.head_text')}
           </h2>
         </motion.div>
       </div>
